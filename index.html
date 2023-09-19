@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,45 +31,124 @@ overflow-y:hidden;
 
 }
 
-h1{
+/*h1{
 
 text-transform:uppercase;
 padding-top:15px;
 color:pink;
 
 
-}
+}*/
 
 h2{
+text-align:center;
 color:purple;
  font-weight: bold;
 position:relative;
- 
-        display: flex;
-        justify-content: center;
-       
-    }
-  
-    span::before {
-        content: "MAURYA";
-        animation: animate infinite 3s;
-        padding-left: 10px;
-    }
-  
-    @keyframes animate {
-  
-        0% {
-            content: "MAURYA";
-        }
-  
-        50% {
-            content: "MANGAL MURTI";
-        }
-  
-      
-    }
+  font-size: 3em;
+  animation: color-change 1s infinite;
+}
 
+@keyframes color-change {
+  0% { color: #412964; }
+  50% { color: #8C52FF; }
+  100% { color: #8D66D8; }
+}
 
+h2{
+    -webkit-animation: color-change 1s infinite;
+    -moz-animation: color-change 1s infinite;
+    -o-animation: color-change 1s infinite;
+    -ms-animation: color-change 1s infinite;
+    animation: color-change 1s infinite;
+}
+
+@-webkit-keyframes color-change {
+    0% { color: #A88CDF; }
+    50% { color:#DD7CB3; }
+    100% { color:#9683BB; }
+}
+@-moz-keyframes color-change {
+    0% { color:#C5B6E1 ; }
+    50% { color: #C81179; }
+    100% { color:#C6AEF6 ; }
+}
+@-ms-keyframes color-change {
+    0% { color: #8C52FF; }
+    50% { color: #FF66C4; }
+    100% { color:#3D1F79; }
+}
+@-o-keyframes color-change {
+    0% { color: #593B94; }
+    50% { color: #E41996; }
+    100% { color: #2E1560; }
+}
+@keyframes color-change {
+    0% { color:#6546A2; }
+    50% { color:#660D44; }
+    100% { color: #3D2076; }
+}
+   
+h3{
+
+font-size:30px;
+
+text-align:center;
+ animation: fadeIn 5s;
+
+  animation-name: example2;
+   animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example2{
+0%{color:rgb(176, 86, 154);}
+25%{color:rgb(141, 77, 148);}
+50%{color:rgb(92, 11, 133);}
+100%{color:rgb(106, 73, 122);}
+
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; 
+	color:#E41996;}
+  100% { opacity: 1; 
+	color:#412964;}
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0;
+ color:#E41996;}
+ }
+  100% { opacity: 1; 
+color:#412964;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0;
+	 color:#E41996; }
+  100% { opacity: 1;
+color:#412964; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; 
+color:#E41996;}
+  100% { opacity: 1;
+color:#412964; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+    
 
 .poster{
 text-align:center;
@@ -84,10 +164,6 @@ outline: 0.2rem solid #4B0082;
 border-radius: 50%;
     width: 600px;
     height: 500px;
-
-
-
-
 
 }
 
@@ -105,9 +181,9 @@ border-radius: 50%;
 <img class="poster-image"src="Mygif.gif" class="responsive" width="600";height="400";>
 
 
-<h2 class="first-heading"> GANPATI BAPPA<span> </span> MAURYA </h2>
+<h2 class="first-heading"> GANPATI BAPPA MAURYA </h2>
 
-
+<h3>“Wishing you and your family a wonderful day honoring Lord Ganesha!</h3>
 
 </div>
 
